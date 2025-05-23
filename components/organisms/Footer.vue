@@ -1,10 +1,4 @@
-
 <script setup>
-import {
-  FacebookIcon,
-  InstagramIcon,
-  TwitterIcon
-} from '@heroicons/vue/24/outline'
 
 const navigation = [
   { name: 'Sobre', href: '#about' },
@@ -14,21 +8,7 @@ const navigation = [
 ]
 
 const social = [
-  {
-    name: 'Facebook',
-    href: '#',
-    icon: FacebookIcon,
-  },
-  {
-    name: 'Instagram',
-    href: '#',
-    icon: InstagramIcon,
-  },
-  {
-    name: 'Twitter',
-    href: '#',
-    icon: TwitterIcon,
-  },
+
 ]
 </script>
 <template>
