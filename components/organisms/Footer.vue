@@ -1,5 +1,4 @@
 <script setup>
-
 const navigation = [
   { name: 'Sobre', href: '#about' },
   { name: 'Serviços', href: '#services' },

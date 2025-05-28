@@ -4,7 +4,7 @@ import { BoltIcon, SunIcon, ArrowTrendingUpIcon } from '@heroicons/vue/24/outlin
 const testimonials = [
   {
     title: 'Aumento de Produção',
-    content: 'Após a limpeza, nossa produção de energia aumentou em 25%. O investimento se pagou em menos de 3 meses!',
+    content: 'Após a limpeza, nossa produção de energia aumentou em visívelmente. O investimento se pagou em menos de 3 meses!',
     author: 'João Silva - Residencial',
     icon: BoltIcon,
   },
