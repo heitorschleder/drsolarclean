@@ -7,7 +7,11 @@ const navigation = [
 ]
 
 const social = [
-
+  {
+    name: 'Youtube',
+    href: 'https://www.youtube.com/@DrSolarClean',
+    icon: ''
+  }
 ]
 </script>
 <template>

@@ -1,8 +1,10 @@
 <script setup>
 import { PhoneIcon } from '@heroicons/vue/24/outline'
 
-const whatsappLink = 'https://wa.me/5548984063437?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20limpeza%20de%20placas%20solares.'
+const whatsappLink1 = 'https://wa.me/5548984063437?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20limpeza%20de%20placas%20solares.'
+const whatsappLink2 = 'https://wa.me/5548996344351?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20limpeza%20de%20placas%20solares.'
 </script>
+
 <template>
   <section id="contact" class="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
     <div class="max-w-xl mx-auto text-center">
@@ -18,11 +20,16 @@ const whatsappLink = 'https://wa.me/5548984063437?text=Olá!%20Gostaria%20de%20u
       <p class="mt-4 text-lg text-gray-600">
         Fale com a nossa equipe no WhatsApp e receba um orçamento rápido e sem burocracia.
       </p>
-      <div class="mt-8">
-        <a :href="whatsappLink" target="_blank" rel="noopener"
+      <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <a :href="whatsappLink1" target="_blank" rel="noopener"
           class="inline-flex items-center justify-center px-6 py-3 text-white bg-green-600 hover:bg-green-700 rounded-md shadow-lg transition duration-300 text-lg">
           <PhoneIcon class="w-5 h-5 mr-2 text-white" />
-          Falar no WhatsApp
+          Falar com Equipe 1
+        </a>
+        <a :href="whatsappLink2" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center px-6 py-3 text-white bg-green-600 hover:bg-green-700 rounded-md shadow-lg transition duration-300 text-lg">
+          <PhoneIcon class="w-5 h-5 mr-2 text-white" />
+          Falar com Equipe 2
         </a>
       </div>
     </div>

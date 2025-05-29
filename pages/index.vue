@@ -18,10 +18,10 @@ import YoutubePlayer from '~/components/molecules/YoutubePlayer.vue';
         <Header />
         <Slider />
         <Services />
-        <YoutubePlayer video-id="B0qqfArVc0Q" />
+        <YoutubePlayer video-id="Rv4hVnjk7m4" />
         <AboutCompany />
-        <Results />
-        <YoutubePlayer video-id="F6SYduturhQ" />
+        <Results /> 
+        <YoutubePlayer video-id="UxkupSgfavM" />
         <ContactForm />
         <Footer />
     </main>
