@@ -14,9 +14,9 @@ import limpeza8 from '~/public/images/image-8.jpg'
 import limpeza9 from '~/public/images/image-9.jpg'
 
 const images = [
+  limpeza3,
   limpeza1,
   limpeza2,
-  limpeza3,
   limpeza4,
   limpeza5,
   limpeza6,
@@ -27,6 +27,7 @@ const images = [
 
 const showModal = ref(false)
 const selectedImage = ref(null)
+const swiperRef = ref(null)
 
 const openModal = (img) => {
   selectedImage.value = img
@@ -36,6 +37,16 @@ const openModal = (img) => {
 const closeModal = () => {
   showModal.value = false
 }
+
+const nextSlide = () => {
+  if (swiperRef.value && swiperRef.value.swiper) {
+    swiperRef.value.swiper.slideNext()
+  }
+}
+
+onMounted(() => {
+  setInterval(nextSlide, 1000)
+})
 </script>
 
 <template>
@@ -49,7 +60,7 @@ const closeModal = () => {
 
     <Swiper
       :loop="true"
-      :autoplay="{ delay: 3000 }"
+      :autoplay="{ delay: 1000 }"
       class="max-w-md mx-auto rounded-lg shadow-md"
     >
       <SwiperSlide v-for="(img, i) in images" :key="i">
