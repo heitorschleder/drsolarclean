@@ -1,14 +1,22 @@
 <script setup lang="ts">
-import AppHead from '~/components/organisms/AppHead.vue';
-import NavBar from '~/components/organisms/NavBar.vue';
-import Header from '~/components/organisms/Header.vue';
-import Slider from '~/components/organisms/Slider.vue';
-import Services from '~/components/organisms/Services.vue';
-import AboutCompany from '~/components/organisms/AboutCompany.vue';
-import Results from '~/components/organisms/Results.vue';
-import ContactForm from '~/components/organisms/ContactForm.vue';
-import Footer from '~/components/organisms/Footer.vue';
-import YoutubePlayer from '~/components/molecules/YoutubePlayer.vue';
+import { onMounted } from 'vue';
+
+onMounted(() => {
+  const script1 = document.createElement('script');
+  script1.async = true;
+  script1.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17134006718';
+  document.head.appendChild(script1);
+
+  const script2 = document.createElement('script');
+  script2.text = `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17134006718');
+    gtag('event', 'conversion', {'send_to': 'AW-17134006718/k2ebCI2d3NIaEL7jkOo_'});
+  `;
+  document.head.appendChild(script2);
+});
 </script>
 
 <template>
