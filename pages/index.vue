@@ -1,36 +1,31 @@
+
 <script setup lang="ts">
-import { onMounted } from 'vue';
-
-onMounted(() => {
-  const script1 = document.createElement('script');
-  script1.async = true;
-  script1.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17134006718';
-  document.head.appendChild(script1);
-
-  const script2 = document.createElement('script');
-  script2.text = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17134006718');
-    gtag('event', 'conversion', {'send_to': 'AW-17134006718/k2ebCI2d3NIaEL7jkOo_'});
-  `;
-  document.head.appendChild(script2);
-});
+import AppHead from '~/components/organisms/AppHead.vue';
+import NavBar from '~/components/organisms/NavBar.vue';
+import Header from '~/components/organisms/Header.vue';
+import Slider from '~/components/organisms/Slider.vue';
+import Services from '~/components/organisms/Services.vue';
+import YoutubePlayer from '~/components/molecules/YoutubePlayer.vue';
+import AboutCompany from '~/components/organisms/AboutCompany.vue';
+import Results from '~/components/organisms/Results.vue';
+import ContactForm from '~/components/organisms/ContactForm.vue';
+import Footer from '~/components/organisms/Footer.vue';
+import GoogleAdsPixel from '../components/atoms/GoogleAdsPixel.vue';
 </script>
 
 <template>
-    <main>
-        <AppHead />
-        <NavBar />
-        <Header />
-        <Slider />
-        <Services />
-        <YoutubePlayer video-id="Rv4hVnjk7m4" />
-        <AboutCompany />
-        <Results /> 
-        <YoutubePlayer video-id="UxkupSgfavM" />
-        <ContactForm />
-        <Footer />
-    </main>
+  <main>
+    <AppHead />
+    <NavBar />
+    <Header />
+    <Slider />
+    <Services />
+    <YoutubePlayer video-id="Rv4hVnjk7m4" />
+    <AboutCompany />
+    <Results /> 
+    <YoutubePlayer video-id="UxkupSgfavM" />
+    <ContactForm />
+    <Footer />
+    <GoogleAdsPixel />
+  </main>
 </template>
